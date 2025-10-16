@@ -1,0 +1,19 @@
+{
+  "name": "claude-code-typescript-template",
+  "version": "1.0.0",
+  "description": "A template for TypeScript/Node projects using Claude Code, with default Claude Code agents and config files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewholliday/claude-code-typescript-template.git"
+  },
+  "author": "Matthew Holliday",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matthewholliday/claude-code-typescript-template/issues"
+  },
+  "homepage": "https://github.com/matthewholliday/claude-code-typescript-template#readme"
+}
