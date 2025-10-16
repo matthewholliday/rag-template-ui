@@ -1,19 +1,39 @@
 {
-  "name": "claude-code-typescript-template",
+  "name": "rag-template-ui",
   "version": "1.0.0",
-  "description": "A template for TypeScript/Node projects using Claude Code, with default Claude Code agents and config files.",
-  "main": "index.js",
+  "description": "React UI for RAG Data Ingestion API",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "type-check": "tsc --noEmit"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/matthewholliday/claude-code-typescript-template.git"
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0",
+    "react-hook-form": "^7.48.2"
   },
-  "author": "Matthew Holliday",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/matthewholliday/claude-code-typescript-template/issues"
-  },
-  "homepage": "https://github.com/matthewholliday/claude-code-typescript-template#readme"
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^14.5.1",
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/coverage-v8": "^1.0.4",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "jsdom": "^23.0.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8",
+    "vitest": "^1.0.4"
+  }
 }
