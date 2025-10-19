@@ -37,6 +37,22 @@
   color: var(--color-primary);
 }
 
+.settings-button {
+  background: none;
+  border: none;
+  color: var(--color-text);
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s;
+  font-family: inherit;
+}
+
+.settings-button:hover {
+  color: var(--color-primary);
+}
+
 @media (max-width: 768px) {
   .nav {
     flex-direction: column;

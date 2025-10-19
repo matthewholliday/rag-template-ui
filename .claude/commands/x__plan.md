@@ -1,0 +1,1 @@
+Use the "dev-plan-architect" agent to generate a step-by-step plan to implement the architecture described in the "./agent_artifacts" folder.

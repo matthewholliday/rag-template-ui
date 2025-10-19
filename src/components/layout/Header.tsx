@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import SettingsModal from '@/components/ui/SettingsModal';
 import './Header.css';
 
 const Header: React.FC = () => {
+  const [isSettingsOpen, setIsSettingsOpen] = useState(false);
+
+  const handleOpenSettings = () => {
+    setIsSettingsOpen(true);
+  };
+
+  const handleCloseSettings = () => {
+    setIsSettingsOpen(false);
+  };
+
   return (
     <header className="header">
       <div className="container">
@@ -23,9 +34,19 @@ const Header: React.FC = () => {
             <li>
               <Link to="/search">Search</Link>
             </li>
+            <li>
+              <button
+                onClick={handleOpenSettings}
+                className="settings-button"
+                aria-label="Settings"
+              >
+                Settings
+              </button>
+            </li>
           </ul>
         </nav>
       </div>
+      <SettingsModal isOpen={isSettingsOpen} onClose={handleCloseSettings} />
     </header>
   );
 };
